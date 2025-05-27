@@ -1,7 +1,7 @@
-# VLCI
+# CMCRL
 
 This is the implementation of [Cross-Modal Causal Intervention for Medical Report Generation](https://arxiv.org/pdf/2303.09117.pdf).
-It contains the codes of the Visual-Linguistic Pre-training (VLP), and fine-tuning via Visual-Linguistic Causal Intervention (VLCI) on IU-Xray/MIMIC-CXR dataset.
+It contains the codes of the Radiological Cross-modal Alignment and Reconstruction Enhanced（RadCARE）, and fine-tuning via Visual-Linguistic Causal Intervention (VLCI) on IU-Xray/MIMIC-CXR dataset.
 
 <div align=center>
 
@@ -46,7 +46,7 @@ python main.py -c config/iu_xray/vlci.json
 | RAMT              | 0.482 | 0.310 | 0.221 | 0.165 |/      |0.377|0.195 |
 | MMTN              | 0.486 | 0.321 | 0.232 | 0.175 |0.361  |0.375|/     |
 | DCL               | /     | /     | /     | 0.163 |**0.586**  |0.383|0.193 |
-| VLCI              | **0.505** | **0.334** | **0.245** | **0.189** |0.456  |**0.397**|**0.204** |
+| CMCRL              | **0.505** | **0.334** | **0.245** | **0.189** |0.456  |**0.397**|**0.204** |
 
 </div>
 
@@ -70,7 +70,7 @@ python main.py -c config/mimic_cxr/vlci.json
 | RAMT              | 0.362 | 0.229 | 0.157 | 0.113 |/    |**0.284**|0.153 | 0.380 | 0.342 | 0.335 |
 | MMTN              | 0.379 | 0.238 | 0.159 | 0.116 |/    |0.283|**0.161** | /     | /     | /     |
 | DCL               | /     | /     | /     | 0.109 |**0.281**|**0.284**|0.150 | 0.471 | 0.352 |0.373  |
-| VLCI              | **0.400** | **0.245** | **0.165** | **0.119** | 0.190 | 0.280   |  0.150  | **0.489** | **0.340** | **0.401** |
+| CMCRL              | **0.400** | **0.245** | **0.165** | **0.119** | 0.190 | 0.280   |  0.150  | **0.489** | **0.340** | **0.401** |
 
 </div>
 
@@ -78,18 +78,18 @@ python main.py -c config/mimic_cxr/vlci.json
 If you use this code for your research, please cite our paper.
 
 ```
-@misc{chen2023crossmodal,
-      title={Cross-Modal Causal Intervention for Medical Report Generation}, 
-      author={Weixing Chen and Yang Liu and Ce Wang and Jiarui Zhu and Guanbin Li and Liang Lin},
-      year={2023},
-      eprint={2303.09117},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+@ARTICLE{11005686,
+  author={Chen, Weixing and Liu, Yang and Wang, Ce and Zhu, Jiarui and Li, Guanbin and Liu, Cheng-Lin and Lin, Liang},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Cross-Modal Causal Representation Learning for Radiology Report Generation}, 
+  year={2025},
+  volume={34},
+  pages={2970-2985},
+  doi={10.1109/TIP.2025.3568746}}
 ```
 
 ## Contact
-If you have any question about this code, feel free to reach me (chen867820261@gmail.com)
+If you have any questions about this code, feel free to reach me (chenwx228@mail2.sysu.edu.cn)
 
 ## Acknowledges
 We thank [R2Gen](https://github.com/cuhksz-nlp/R2Gen) for their open source works.
